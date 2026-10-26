@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ne">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>माङसेवा साम्लो · Mangsewa Samlo</title>
+<meta name="description" content="Kirat bhajans in Nepali (Devanagari) and Nepanglish (Roman letters). Free to read.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B3A20">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Serif+Devanagari:wght@400;600&family=Fraunces:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="#/" aria-label="Home">
+    <img src="logo.png" alt="" width="36" height="36">
+    <span class="brand-name" id="brandName"></span>
+  </a>
+  <button id="langQuick" class="quick" type="button" aria-label="Language"></button>
+  <label class="search">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" autocomplete="off" spellcheck="false">
+  </label>
+  <div class="tools">
+    <div class="seg" role="group" aria-label="Language">
+      <button id="langNe" type="button">नेपाली</button>
+      <button id="langEn" type="button">Nepanglish</button>
+    </div>
+    <button id="sizeDown" class="icon" type="button" aria-label="Smaller text">A−</button>
+    <button id="sizeUp" class="icon" type="button" aria-label="Larger text">A+</button>
+    <button id="fontBtn" class="icon fontbtn" type="button" aria-label="Lyrics font"></button>
+    <button id="themeBtn" class="icon" type="button" aria-label="Theme"><span id="themeGlyph">◐</span></button>
+  </div>
+  <button id="menuBtn" class="icon menubtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="foot" id="foot"></footer>
+
+<nav class="bar" id="bar" aria-label="Menu"></nav>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Menu" aria-hidden="true"></aside>
+
+<script src="app.js"></script>
+</body>
+</html>
